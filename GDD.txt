@@ -1,0 +1,54 @@
+Concept:
+-3rd person
+-Shooter 2D
+-Kill enemys
+-Protect you base
+-Advance for level
+
+
+Game Overview:
+-Stars on the main menu scene
+-Goes to the game scene
+-After end a level, show score point and start a new level
+
+Level Overview:
+-YH base to protec
+-YH enemys to kill
+-YH powerUp
+-YH wall
+
+Game Desing;
+-theme: 2nd World War
+-Player experiende: adrenalin
+-Core Mechanic: move and shoot
+-Secindary mechanic: hide and defend a spot
+-Game loop:
+	Pincipal Menu->Game scene-> Score Scene
+
+
+FEATURE ANALYSIS
+
+Core:
+	-Player movement
+	-Enemys movement
+	-shoot proyectiles
+
+Secondary:
+	-walls can be destroyed or not
+	-Enemys attacks
+	-Enemy -tipe sistem-
+
+Polish:
+	-Visual effects
+	-Sound Effects
+	-Menu and UI
+	-Content made and tunning
+
+Art Assets:
+	-Assets free because i"m poor btw
+	-Character sprites
+	-Enemy sprites
+	-Walls sprites
+	-Materiales
+	-Fronts
+	-UI Sprites
