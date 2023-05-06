@@ -11,8 +11,8 @@ Game Overview:
 -After end the life point of the enemy player, say player winer
 
 Level Overview:
--YH life to protec
--YH enemys to lose life point
+-You Have life to protec
+-You Have enemys to lose life point
 
 
 Game Desing;
@@ -34,6 +34,7 @@ Core:
 Secondary:
 	-the ball can be destroyed by passing
 	 the defense area of ​​the other player
+	-ball respawn.
 	-score marker
 
 Polish:
