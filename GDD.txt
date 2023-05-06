@@ -1,54 +1,51 @@
 Concept:
--3rd person
--Shooter 2D
--Kill enemys
--Protect you base
--Advance for level
+-Player vs Player
+-Agility
+-Pass the ball to  the other side
+-Stay alive
 
 
 Game Overview:
 -Stars on the main menu scene
 -Goes to the game scene
--After end a level, show score point and start a new level
+-After end the life point of the enemy player, say player winer
 
 Level Overview:
--YH base to protec
--YH enemys to kill
--YH powerUp
--YH wall
+-YH life to protec
+-YH enemys to lose life point
+
 
 Game Desing;
--theme: 2nd World War
+-theme: 2nd pin pong
 -Player experiende: adrenalin
--Core Mechanic: move and shoot
--Secindary mechanic: hide and defend a spot
+-Core Mechanic: move
+-Secindary mechanic: move vertically
 -Game loop:
-	Pincipal Menu->Game scene-> Score Scene
+	Pincipal Menu->Game scene-> Winner final scene
 
 
 FEATURE ANALYSIS
 
 Core:
-	-Player movement
-	-Enemys movement
-	-shoot proyectiles
+	-Player1 movement
+	-Player2 movement
+	-random start of the ball
 
 Secondary:
-	-walls can be destroyed or not
-	-Enemys attacks
-	-Enemy -tipe sistem-
+	-the ball can be destroyed by passing
+	 the defense area of ​​the other player
+	-score marker
 
 Polish:
 	-Visual effects
 	-Sound Effects
 	-Menu and UI
-	-Content made and tunning
+
 
 Art Assets:
-	-Assets free because i"m poor btw
+	-Assets free
 	-Character sprites
-	-Enemy sprites
-	-Walls sprites
+	-ball sprites
 	-Materiales
 	-Fronts
 	-UI Sprites
