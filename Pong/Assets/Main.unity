@@ -172,6 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player1: 0
+  axisRawName: Vertical2
   movement: 0
 --- !u!50 &2386490
 Rigidbody2D:
@@ -262,7 +263,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.027020968, b: 0.7830189, a: 1}
+  m_Color: {r: 0.2731399, g: 0.46666667, b: 0.3083751, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1219,6 +1220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   player1: 1
+  axisRawName: Vertical
   movement: 0
 --- !u!1 &1470183922
 GameObject:

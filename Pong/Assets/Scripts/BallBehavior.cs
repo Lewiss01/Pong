@@ -4,22 +4,28 @@ using UnityEngine;
 
 public class BallBehavior : MonoBehaviour
 {
-    [SerializeField] float ballSpeed = 3f;
+    [SerializeField] private float normalSpeed = 3f;
+    private Vector2 movementDirection;
+    public float actualSpeed;
+
     private float positionStartX;
     private float positionStartY;
 
     private Rigidbody2D rb2D;
-    void Start()
+    private void Start()
     {
-       rb2D = GetComponent<Rigidbody2D>();
+        actualSpeed = normalSpeed;
+        rb2D = GetComponent<Rigidbody2D>();
         RandomStart();
     }
 
     public void RandomStart()
     {
-        positionStartX = Random.Range(0, 2) == 0 ? 1 : -1;
-        positionStartY = Random.Range(0, 2) == 0 ? 1 : -1;
-        rb2D.velocity = new Vector2(positionStartX, positionStartY)* ballSpeed;
+        positionStartX = Random.Range(-1, 2); //== 0 ? 1 : -1;
+        positionStartY = Random.Range(-1, 2);// == 0 ? 1 : -1;
+        rb2D.velocity = new Vector2(positionStartX, positionStartY)* normalSpeed;
+
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

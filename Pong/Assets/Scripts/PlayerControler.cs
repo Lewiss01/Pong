@@ -7,9 +7,12 @@ public class PlayerControler : MonoBehaviour
     [SerializeField] float speed = 10f;
 
     [SerializeField] bool player1;
+    [SerializeField] string axisRawName;
 
     public float movement;
     private Vector2 playerPosition;
+
+
 
 
     void Start()
@@ -28,14 +31,7 @@ public class PlayerControler : MonoBehaviour
 
     public void PlayersMovement()
     {
-         if (player1)
-         {
-            movement = Input.GetAxisRaw("Vertical");
-         }
-         else
-         {
-             movement = Input.GetAxisRaw("Vertical2");
-         }
+        movement = Input.GetAxisRaw(axisRawName);   
     }
 
     public void PlayerBoundaries()
