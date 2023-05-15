@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: 31274572}
   - component: {fileID: 31274573}
   - component: {fileID: 31274574}
+  - component: {fileID: 31274575}
   m_Layer: 0
   m_Name: ArcheryP2
   m_TagString: ArcheryP2
@@ -468,6 +469,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &31274575
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31274571}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &180998235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,9 +1372,10 @@ GameObject:
   - component: {fileID: 1506870567}
   - component: {fileID: 1506870568}
   - component: {fileID: 1506870569}
+  - component: {fileID: 1506870570}
   m_Layer: 0
   m_Name: Bot
-  m_TagString: Untagged
+  m_TagString: BBot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1450,6 +1473,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1506870570
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506870566}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1546993867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,9 +1569,10 @@ GameObject:
   - component: {fileID: 1588517589}
   - component: {fileID: 1588517591}
   - component: {fileID: 1588517590}
+  - component: {fileID: 1588517592}
   m_Layer: 0
   m_Name: Top
-  m_TagString: Untagged
+  m_TagString: BTop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1625,6 +1670,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1588517592
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588517588}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1855100225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,7 +1702,6 @@ GameObject:
   - component: {fileID: 1855100226}
   - component: {fileID: 1855100227}
   - component: {fileID: 1855100228}
-  - component: {fileID: 1855100229}
   - component: {fileID: 1855100230}
   m_Layer: 0
   m_Name: Ball
@@ -1728,27 +1793,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!50 &1855100229
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855100225}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: 378af63bc108aed43af4f7d5472d34f7, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &1855100230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1761,7 +1805,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 840e44adfe42fc5449d6c20609ea0d81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballSpeed: 3
+  normalSpeed: 3
+  initialPos: {fileID: 2090496183}
+  actualSpeed: 3
 --- !u!1 &2006453667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1773,6 +1819,7 @@ GameObject:
   - component: {fileID: 2006453668}
   - component: {fileID: 2006453669}
   - component: {fileID: 2006453670}
+  - component: {fileID: 2006453671}
   m_Layer: 0
   m_Name: ArcheryP1
   m_TagString: ArcheryP1
@@ -1873,6 +1920,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &2006453671
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006453667}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &2065669364
 GameObject:
   m_ObjectHideFlags: 0

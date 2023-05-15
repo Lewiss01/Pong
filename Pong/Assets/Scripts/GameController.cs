@@ -35,15 +35,19 @@ public class GameController : MonoBehaviour
             return connector;
         }      
     }
+
+   
     public void p1Scored()
     {
         scoreP1++;
         textScoreP1.text = scoreP1.ToString();
+        ReStart();
     }
     public void p2Scored()
     {
         scoreP2++;
         textScoreP2.text = scoreP2.ToString();
+        ReStart();
     }
 
     public void ReStart()

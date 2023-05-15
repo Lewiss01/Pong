@@ -8,6 +8,8 @@ TagManager:
   - Player2
   - ArcheryP1
   - ArcheryP2
+  - BTop
+  - BBot
   layers:
   - Default
   - TransparentFX
